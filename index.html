@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Disease Predictor</h2>
+        <form method="POST">
+            <label>Age:</label><input type="text" name="feature"><br><br>
+            <label>Cholesterol:</label><input type="text" name="feature"><br><br>
+            <label>Glucose:</label><input type="text" name="feature"><br><br>
+            <label>Blood Pressure:</label><input type="text" name="feature"><br><br>
+            <label>Heart Rate:</label><input type="text" name="feature"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if result %}
+            <p class="result">{{ result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
